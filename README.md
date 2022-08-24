@@ -1,58 +1,57 @@
-"# Dotnet" 
-//Cloner la solution sur un dossier Perso 
-C:\Perso>git clone https://github.com/alexanderastoray/Dotnet
+## Project pour afficher un timer dans un conteneur 
 
-//Ouvrir la solution sur VisualCode 
-C:\Perso\Dotnet>code .
+###### Cloner la solution sur un dossier Perso
+> C:\Perso>git clone https://github.com/alexanderastoray/Dotnet
 
-// Rentrer dans le project pour lancer la solution 
-PS C:\Perso\Dotnet> cd App
-PS C:\Perso\Dotnet> dotnet build Or PS C:\Perso\Dotnet\App> dotnet run 
+###### Ouvrir la solution sur VisualCode
+> C:\Perso\Dotnet>code .
 
-//Docker traitera chaque ligne du Dockerfile. Le . dans la docker build commande définit le contexte de génération de l’image.
-PS C:\Perso\Dotnet\App> docker build -t counter-image -f Dockerfile .
+###### Rentrer dans le project pour lancer la solution
+> PS C:\Perso\Dotnet> cd App 
+> PS C:\Perso\Dotnet> dotnet build Or PS C:\Perso\Dotnet\App> dotnet run  
 
-// Exécutez docker images pour afficher une liste des images installées :
-PS C:\Perso\Dotnet\App> docker images 
+###### Docker traitera chaque ligne du Dockerfile. Le . dans la docker build commande définit le contexte de génération de l’image.
+> PS C:\Perso\Dotnet\App> docker build -t counter-image -f Dockerfile .
 
-// Vous pouvez créer un conteneur de deux manières. Tout d’abord, créez un conteneur arrêté. 
-PS C:\Perso\Dotnet\App> docker create --name core-counter counter-image
-de58b92ffe664271a4cd491e7e85cb57d8eb4557e13f7d1f97c1689297b34264
+###### Exécutez docker images pour afficher une liste des images installées : 
+> PS C:\Perso\Dotnet\App> docker images 
 
-//Pour afficher une liste de tous les conteneurs, utilisez la commande docker ps -a :
-PS C:\Perso\Dotnet\App> docker ps -a
-CONTAINER ID   IMAGE                                      COMMAND                  CREATED          STATUS                           PORTS     NAMES
-de58b92ffe66   counter-image                              "dotnet Dotnet.Docke…"   36 seconds ago   Created                                    core-counter
+###### Vous pouvez créer un conteneur de deux manières. Tout d’abord, créez un conteneur arrêté. 
+> PS C:\Perso\Dotnet\App> docker create --name core-counter counter-image
+>> de58b92ffe664271a4cd491e7e85cb57d8eb4557e13f7d1f97c1689297b34264
 
-//Gérer le conteneur
+###### Pour afficher une liste de tous les conteneurs, utilisez la commande docker ps -a : 
+> PS C:\Perso\Dotnet\App> docker ps -a
 
-//L’exemple suivant utilise la commande docker start pour démarrer le conteneur
-PS C:\Perso\Dotnet\App> docker start core-counter
-core-counter
+ |CONTAINER ID | NAMES        |
+ | ----------  | ------------ |
+ |de58b92ffe66 | core-counter |
 
-//docker ps pour afficher uniquement les conteneurs en cours d’exécution :
-PS C:\Perso\Dotnet\App> docker ps
-CONTAINER ID   IMAGE           COMMAND                  CREATED              STATUS         PORTS     NAMES
-de58b92ffe66   counter-image   "dotnet Dotnet.Docke…"   About a minute ago   Up 4 seconds             core-counter
+### Gérer le conteneur
 
-//Se connecter à un conteneur
-PS C:\Perso\Dotnet\App> docker attach --sig-proxy=false core-counter
-Counter: 64
-Counter: 65
-.....
+###### L’exemple suivant utilise la commande docker start pour démarrer le conteneur
+> PS C:\Perso\Dotnet\App> docker start core-counter
+>> core-counter
 
-//Supprimer un conteneur 
+###### docker ps pour afficher uniquement les conteneurs en cours d’exécution :
+> PS C:\Perso\Dotnet\App> docker ps
 
-//Si le conteneur est en cours d’exécution, arrêtez-le.
-PS C:\Perso\Dotnet\App> docker stop core-counter
-core-counter
+###### Se connecter à un conteneur
+> PS C:\Perso\Dotnet\App> docker attach --sig-proxy=false core-counter
+>> Counter: 64
+>> Counter: 65
+>> .....
 
-//docker rm commande pour supprimer le conteneur,
-PS C:\Perso\Dotnet\App> docker rm core-counter
-core-counter
+### Supprimer un conteneur 
 
-//
-PS C:\Perso\Dotnet\App> docker ps -a
-CONTAINER ID   IMAGE   
+###### Si le conteneur est en cours d’exécution, arrêtez-le.
+> PS C:\Perso\Dotnet\App> docker stop core-counter
+>> core-counter
 
+###### docker rm commande pour supprimer le conteneur,
+> PS C:\Perso\Dotnet\App> docker rm core-counter
+>> core-counter
 
+###### 
+> PS C:\Perso\Dotnet\App> docker ps -a
+>> CONTAINER ID   IMAGE
