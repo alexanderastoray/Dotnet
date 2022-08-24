@@ -8,7 +8,7 @@
 
 ###### Rentrer dans le project pour lancer la solution
 > PS C:\Perso\Dotnet> cd App 
-> PS C:\Perso\Dotnet> dotnet build Or PS C:\Perso\Dotnet\App> dotnet run  
+>> PS C:\Perso\Dotnet> dotnet build Or PS C:\Perso\Dotnet\App> dotnet run  
 
 ###### Docker traitera chaque ligne du Dockerfile. Le . dans la docker build commande définit le contexte de génération de l’image.
 > PS C:\Perso\Dotnet\App> docker build -t counter-image -f Dockerfile .
