@@ -59,3 +59,4 @@ The next file that we are going to discuss is the appsettings.json file. This is
 If you want to configure some settings based on the environments then you can do such settings in appsettings.{Environment}.json file. You can create n number of environments like development, staging, production, etc. 
 
 ### Program.cs class file:
+The Startup class is like the Global.asax file of our traditional .NET application. As the name suggests, it is executed when the application starts
