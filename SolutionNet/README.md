@@ -60,3 +60,20 @@ If you want to configure some settings based on the environments then you can do
 
 ### Program.cs class file:
 The Startup class is like the Global.asax file of our traditional .NET application. As the name suggests, it is executed when the application starts
+
+## How to Create a Docker Image of a .NET Web API
+
+Docker traitera chaque ligne du Dockerfile. Le . dans la docker build commande définit le contexte de génération de l’image.
+
+> docker build -t solutionnet.webapi -f Dockerfile .
+
+Running the Docker Image
+
+> docker run -ti --rm -p 8080:80 solutionnet.webapi
+
+Note: On arrive pas a lancer le http://localhost:8080/swagger/index.html mais directement http://localhost:8080/WeatherForecast
+
+Supprimer une image
+
+> docker rmi solutionnet.webapi
+> docker rmi solutionnet.webapi --force
