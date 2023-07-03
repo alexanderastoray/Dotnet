@@ -1,0 +1,15 @@
+/Users/alexanderastoray/Documents/Projets/Dotnet/SnippetsCsharp/bin/Debug/net7.0/SnippetsCsharp
+/Users/alexanderastoray/Documents/Projets/Dotnet/SnippetsCsharp/bin/Debug/net7.0/SnippetsCsharp.deps.json
+/Users/alexanderastoray/Documents/Projets/Dotnet/SnippetsCsharp/bin/Debug/net7.0/SnippetsCsharp.runtimeconfig.json
+/Users/alexanderastoray/Documents/Projets/Dotnet/SnippetsCsharp/bin/Debug/net7.0/SnippetsCsharp.dll
+/Users/alexanderastoray/Documents/Projets/Dotnet/SnippetsCsharp/bin/Debug/net7.0/SnippetsCsharp.pdb
+/Users/alexanderastoray/Documents/Projets/Dotnet/SnippetsCsharp/obj/Debug/net7.0/SnippetsCsharp.csproj.AssemblyReference.cache
+/Users/alexanderastoray/Documents/Projets/Dotnet/SnippetsCsharp/obj/Debug/net7.0/SnippetsCsharp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alexanderastoray/Documents/Projets/Dotnet/SnippetsCsharp/obj/Debug/net7.0/SnippetsCsharp.AssemblyInfoInputs.cache
+/Users/alexanderastoray/Documents/Projets/Dotnet/SnippetsCsharp/obj/Debug/net7.0/SnippetsCsharp.AssemblyInfo.cs
+/Users/alexanderastoray/Documents/Projets/Dotnet/SnippetsCsharp/obj/Debug/net7.0/SnippetsCsharp.csproj.CoreCompileInputs.cache
+/Users/alexanderastoray/Documents/Projets/Dotnet/SnippetsCsharp/obj/Debug/net7.0/SnippetsCsharp.dll
+/Users/alexanderastoray/Documents/Projets/Dotnet/SnippetsCsharp/obj/Debug/net7.0/refint/SnippetsCsharp.dll
+/Users/alexanderastoray/Documents/Projets/Dotnet/SnippetsCsharp/obj/Debug/net7.0/SnippetsCsharp.pdb
+/Users/alexanderastoray/Documents/Projets/Dotnet/SnippetsCsharp/obj/Debug/net7.0/SnippetsCsharp.genruntimeconfig.cache
+/Users/alexanderastoray/Documents/Projets/Dotnet/SnippetsCsharp/obj/Debug/net7.0/ref/SnippetsCsharp.dll
